@@ -3,3 +3,15 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin viewport-tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin viewport-desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
