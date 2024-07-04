@@ -1,5 +1,5 @@
 .hero {
-  background: #000000;
+  background: $primary-gradient;
 }
 
 .hero__content {
@@ -7,18 +7,26 @@
 }
 
 .hero__info {
+  display: flex;
+  flex-direction: column;
   color: $white-color;
 }
 
 .hero__city {
   display: block;
+  margin-bottom: 14px;
   font-family: $primary-font;
   font-size: 32px;
   line-height: 32px;
   font-weight: 600;
+  text-align: right;
 }
 
 .hero__text {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: space-between;
   margin-bottom: 48px;
 }
 
@@ -30,6 +38,7 @@
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-align: right;
 }
 
 .hero__list {
@@ -37,10 +46,11 @@
 
   line-height: 20px;
   font-weight: 400;
+  text-align: right;
 }
 
 .hero__button {
-  width: 290px;
+  width: 100%;
 }
 
 .hero__image {
