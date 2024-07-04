@@ -1,0 +1,32 @@
+.hero {
+  background: #000000;
+}
+
+.hero__text {
+  color: $white-color;
+}
+
+.hero__city {
+  display: block;
+  font-family: $primary-font;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.hero__info strong {
+  display: block;
+  font-family: $primary-font;
+  font-size: 62px;
+  line-height: 62px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero__list {
+  @include reset-list;
+
+  line-height: 20px;
+  font-weight: 400;
+}

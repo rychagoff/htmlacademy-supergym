@@ -1,0 +1,14 @@
+.button {
+  display: inline-flex;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid $white-color;
+
+  &--light {
+    padding: 22px;
+    color: $white-color;
+  }
+}
