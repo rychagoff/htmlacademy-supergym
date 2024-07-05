@@ -1,0 +1,24 @@
+.title {
+  margin: 0;
+
+  &--lg {
+    font-family: $primary-font;
+    font-size: 62px;
+    line-height: 62px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @include viewport-tablet {
+      font-size: 72px;
+      line-height: 85px;
+      letter-spacing: 2px;
+    }
+
+    @include viewport-desktop {
+      font-size: 92px;
+      line-height: 110px;
+      letter-spacing: 4px;
+    }
+  }
+}
