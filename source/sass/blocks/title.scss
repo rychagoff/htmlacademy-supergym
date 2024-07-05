@@ -21,4 +21,11 @@
       letter-spacing: 4px;
     }
   }
+
+  &--md {
+    font-family: $primary-font;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
+  }
 }

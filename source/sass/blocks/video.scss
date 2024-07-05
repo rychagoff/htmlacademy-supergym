@@ -1,0 +1,47 @@
+.video__link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#14367a, 0.5);
+  }
+}
+
+.video__link img {
+  display: block;
+}
+
+.video__button {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(90deg, $banner-color 0%, #003eb7 100%);
+  color: $white-color;
+  border: 0;
+  border-radius: 52px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: -10px;
+    background-color: transparent;
+    border: 2px solid rgba($banner-color, 0.2);
+    border-radius: 72px;
+  }
+}
+
+.video__play {
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding-left: 3px;
+}
