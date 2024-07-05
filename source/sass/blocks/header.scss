@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+
+  @include viewport-tablet {
+    padding: 30px 0;
+  }
+}
+
+.header__logo img {
+  display: flex;
+}
+
+.header__phone a {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $white-color;
+
+  @include viewport-tablet {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @include viewport-desktop {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,147 @@
+.hero {
+  background: $primary-gradient;
+}
+
+.hero__content {
+  @include viewport-tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-bottom: 100px;
+  }
+
+  @include viewport-desktop {
+    display: flex;
+    justify-content: flex-end;
+    gap: 56px;
+    padding: 30px 0 120px;
+  }
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0 32px;
+  color: $white-color;
+
+  @include viewport-tablet {
+    padding: 31px 0;
+  }
+
+  @include viewport-desktop {
+    padding: 52px 0;
+  }
+}
+
+.hero__city {
+  display: block;
+  margin-bottom: 14px;
+  font-family: $primary-font;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: right;
+
+  @include viewport-tablet {
+    margin-bottom: 10px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @include viewport-desktop {
+    margin-bottom: 40px;
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.hero__text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 48px;
+
+  @include viewport-tablet {
+    justify-content: flex-end;
+    gap: 26px;
+    margin-bottom: 50px;
+  }
+
+  @include viewport-desktop {
+    justify-content: flex-start;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.hero__title {
+  width: min-content;
+  text-align: right;
+  order: 1;
+
+  @include viewport-tablet {
+    max-width: 185px;
+  }
+
+  @include viewport-desktop {
+    max-width: fit-content;
+  }
+}
+
+.hero__list {
+  @include reset-list;
+
+  line-height: 20px;
+  font-weight: 400;
+  text-align: right;
+
+  @include viewport-tablet {
+    margin-bottom: 24px;
+    line-height: 22px;
+  }
+
+  @include viewport-desktop {
+    margin-bottom: 70px;
+  }
+}
+
+.hero__action {
+  display: flex;
+  justify-content: flex-end;
+
+  @include viewport-tablet {
+    align-self: flex-end;
+    max-width: 185px;
+  }
+}
+
+.hero__button {
+  width: 100%;
+
+  @include viewport-tablet {
+    width: 185px;
+    margin-left: auto;
+    padding: 20px 0;
+  }
+
+  @include viewport-desktop {
+    width: 270px;
+    padding: 25px 0;
+  }
+}
+
+.hero__image {
+  display: none;
+
+  @include viewport-tablet {
+    display: flex;
+  }
+
+  @include viewport-desktop {
+    margin-right: 72px;
+  }
+}
+
+.hero__image img {
+  display: block;
+}
