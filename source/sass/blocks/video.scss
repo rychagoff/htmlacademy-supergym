@@ -1,3 +1,8 @@
+.video {
+  position: relative;
+  margin: 0 calc(-1 * var(--padding-offset));
+}
+
 .video__link {
   position: relative;
 
@@ -15,7 +20,9 @@
 }
 
 .video__button {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  right: 50%;
   display: flex;
   margin: 0;
   padding: 20px;
@@ -23,6 +30,7 @@
   color: $white-color;
   border: 0;
   border-radius: 52px;
+  transform: translate(50%, -50%);
 
   &::before {
     content: "";

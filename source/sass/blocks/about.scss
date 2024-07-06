@@ -1,5 +1,37 @@
+.about {
+  padding: 40px 0;
+}
+
+.about__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.about__title {
+  margin-bottom: 12px;
+}
+
 .about__description {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 36px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.about__info p {
+  margin: 0;
+}
+
+.about__image {
+  max-height: 360px;
+  overflow: hidden;
+  margin: 0 calc(-1 * var(--padding-offset));
+}
+
+.about__image img {
+  display: block;
+  width: 100%;
 }
