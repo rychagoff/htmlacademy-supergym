@@ -1,9 +1,25 @@
 .video {
   position: relative;
   margin: 0 calc(-1 * var(--padding-offset));
+
+  @include viewport-tablet {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 270px;
+    height: 170px;
+    margin: 0;
+    transform: translate(-50%, 50%);
+  }
+
+  @include viewport-desktop {
+    width: 360px;
+    height: 230px;
+  }
 }
 
 .video__link {
+  display: block;
   position: relative;
 
   &::before {
@@ -17,6 +33,7 @@
 
 .video__link img {
   display: block;
+  width: 100%;
 }
 
 .video__button {
@@ -32,6 +49,10 @@
   border-radius: 52px;
   transform: translate(50%, -50%);
 
+  @include viewport-desktop {
+    padding: 27px 27px 28px 28px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -44,6 +65,10 @@
     background-color: transparent;
     border: 2px solid rgba($banner-color, 0.2);
     border-radius: 72px;
+
+    @include viewport-desktop {
+      margin: -14px;
+    }
   }
 }
 
@@ -52,4 +77,9 @@
   width: 12px;
   height: 12px;
   padding-left: 3px;
+
+  @include viewport-desktop {
+    width: 17px;
+    height: 17px;
+  }
 }
