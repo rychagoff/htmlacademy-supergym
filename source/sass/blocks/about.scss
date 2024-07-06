@@ -1,47 +1,15 @@
 .about {
   padding: 40px 0;
-
-  @include viewport-tablet {
-    padding: 60px 0 120px;
-  }
-
-  @include viewport-desktop {
-    padding: 120px 0 240px;
-  }
 }
 
 .about__inner {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 36px;
-
-  @include viewport-desktop {
-    flex-direction: row;
-    gap: 145px;
-  }
-}
-
-.about__info {
-  @include viewport-tablet {
-    text-align: center;
-  }
-
-  @include viewport-desktop {
-    text-align: left;
-  }
 }
 
 .about__title {
   margin-bottom: 12px;
-
-  @include viewport-tablet {
-    margin-bottom: 20px;
-  }
-
-  @include viewport-desktop {
-    margin-bottom: 25px;
-  }
 }
 
 .about__description {
@@ -51,54 +19,16 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
-
-  @include viewport-tablet {
-    font-size: 20px;
-  }
-
-  @include viewport-desktop {
-    margin-bottom: 95px;
-    font-size: 22px;
-    line-height: 22px;
-  }
 }
 
 .about__info p {
   margin: 0;
-
-  @include viewport-tablet {
-    max-width: 500px;
-    margin: auto;
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-.about__info p + p {
-  display: none;
-  margin: 8px auto;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-
-  @include viewport-desktop {
-    display: block;
-  }
 }
 
 .about__image {
-  // max-height: 360px;
-  // overflow: hidden;
+  max-height: 360px;
+  overflow: hidden;
   margin: 0 calc(-1 * var(--padding-offset));
-
-  @include viewport-tablet {
-    margin: 0;
-  }
-
-  @include viewport-desktop {
-    flex: 1 0 auto;
-  }
 }
 
 .about__image img {
