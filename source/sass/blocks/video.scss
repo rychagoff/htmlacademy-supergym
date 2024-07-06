@@ -1,6 +1,7 @@
 .video {
   position: relative;
   margin: 0 calc(-1 * var(--padding-offset));
+  background-color: $secondary-color;
 
   @include viewport-tablet {
     position: absolute;
@@ -19,8 +20,11 @@
 }
 
 .video__link {
-  display: block;
   position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
 
   &::before {
     content: "";
@@ -40,7 +44,7 @@
   position: absolute;
   top: 50%;
   right: 50%;
-  display: flex;
+  display: none;
   margin: 0;
   padding: 20px;
   background: linear-gradient(90deg, $banner-color 0%, #003eb7 100%);
@@ -51,6 +55,10 @@
 
   @include viewport-desktop {
     padding: 27px 27px 28px 28px;
+  }
+
+  &--enabled {
+    display: flex;
   }
 
   &::before {
